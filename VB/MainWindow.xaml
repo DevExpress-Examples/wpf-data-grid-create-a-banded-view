@@ -1,0 +1,25 @@
+﻿<Window x:Class="BandedViewSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <dxg:GridControl ItemsSource="{Binding}">
+            <dxg:GridControl.Bands>
+                <dxg:GridControlBand Header="0" VisibleIndex="0">
+                    <dxg:GridColumn FieldName="Id" VisibleIndex="0"/>
+                </dxg:GridControlBand>
+                <dxg:GridControlBand Header="1" VisibleIndex="1">
+                    <dxg:GridColumn FieldName="Text" VisibleIndex="1"/>
+                    <dxg:GridColumn FieldName="Number" dxg:BandBase.GridRow="1" VisibleIndex="3"/>
+                </dxg:GridControlBand>
+                <dxg:GridControlBand Header="2" VisibleIndex="2">
+                    <dxg:GridColumn FieldName="MultiLineText"/>
+                </dxg:GridControlBand>
+            </dxg:GridControl.Bands>
+            <dxg:GridControl.View>
+                <dxg:TableView AllowChangeColumnParent="True" AllowChangeBandParent="True" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
