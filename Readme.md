@@ -15,17 +15,17 @@
 * [Generic.xaml](./CS/DevExpress.Xpf.Grid.Extensions/DevExpress.Xpf.Grid.Extensions/Themes/Generic.xaml) (VB: [Generic.xaml](./VB/DevExpress.Xpf.Grid.Extensions/DevExpress.Xpf.Grid.Extensions/Themes/Generic.xaml))
 * [Generic.xaml](./CS/DevExpress.Xpf.Grid.Extensions/Generic.SL/Generic.xaml) (VB: [Generic.xaml](./VB/DevExpress.Xpf.Grid.Extensions/Generic.SL/Generic.xaml))
 * [Generic.xaml](./CS/DevExpress.Xpf.Grid.Extensions/Generic.Wpf/Generic.xaml) (VB: [Generic.xaml](./VB/DevExpress.Xpf.Grid.Extensions/Generic.Wpf/Generic.xaml))
-* [MainWindow.xaml](./CS/GridBandedView.Tutorial/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/GridBandedView.Tutorial/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/GridBandedView.Tutorial/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/GridBandedView.Tutorial/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/GridBandedView.Tutorial/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/GridBandedView.Tutorial/MainWindow.xaml.vb))
-* [AdvBandedView.xaml](./CS/GridBandedView/AdvBandedView.xaml) (VB: [AdvBandedView.xaml.vb](./VB/GridBandedView/AdvBandedView.xaml.vb))
+* [AdvBandedView.xaml](./CS/GridBandedView/AdvBandedView.xaml) (VB: [AdvBandedView.xaml](./VB/GridBandedView/AdvBandedView.xaml))
 * [AdvBandedView.xaml.cs](./CS/GridBandedView/AdvBandedView.xaml.cs) (VB: [AdvBandedView.xaml.vb](./VB/GridBandedView/AdvBandedView.xaml.vb))
 * [Data.cs](./CS/GridBandedView/Data.cs) (VB: [Data.vb](./VB/GridBandedView/Data.vb))
-* [MainPage.xaml](./CS/GridBandedView/MainPage.xaml) (VB: [MainPage.xaml.vb](./VB/GridBandedView/MainPage.xaml.vb))
+* [MainPage.xaml](./CS/GridBandedView/MainPage.xaml) (VB: [MainPage.xaml](./VB/GridBandedView/MainPage.xaml))
 * [MainPage.xaml.cs](./CS/GridBandedView/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/GridBandedView/MainPage.xaml.vb))
 * [MainWindow.xaml](./CS/GridBandedView/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/GridBandedView/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/GridBandedView/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/GridBandedView/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/GridBandedView/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/GridBandedView/MainWindow.xaml.vb))
 * [SimpleBandedView.xaml](./CS/GridBandedView/SimpleBandedView.xaml) (VB: [SimpleBandedView.xaml](./VB/GridBandedView/SimpleBandedView.xaml))
-* [SimpleBandedView.xaml.cs](./CS/GridBandedView/SimpleBandedView.xaml.cs) (VB: [SimpleBandedView.xaml](./VB/GridBandedView/SimpleBandedView.xaml))
+* [SimpleBandedView.xaml.cs](./CS/GridBandedView/SimpleBandedView.xaml.cs) (VB: [SimpleBandedView.xaml.vb](./VB/GridBandedView/SimpleBandedView.xaml.vb))
 <!-- default file list end -->
 # How to: Create a Banded View
 
