@@ -1,35 +1,47 @@
-Imports System
-Imports System.Collections.Generic
+Imports System.Collections.ObjectModel
 Imports System.Windows
-Imports System.Windows.Documents
 
 Namespace BandedViewSample
 
-    ''' <summary>
-    ''' Interaction logic for MainWindow.xaml
-    ''' </summary>
     Public Partial Class MainWindow
         Inherits Window
 
         Public Sub New()
             Me.InitializeComponent()
-            Dim list As List(Of TestData) = New List(Of TestData)()
-            For i As Integer = 0 To 100 - 1
-                list.Add(New TestData() With {.Id = i, .Text = "Row" & i, .Number = i, .MultiLineText = "Row" & i & "Line0" & Environment.NewLine & "Row" & i & "Line1" & Environment.NewLine & "Row" & i & "Line2"})
-            Next
-
-            DataContext = list
+            Me.grid.ItemsSource = Vehicles.GetVehicles()
         End Sub
     End Class
 
-    Public Class TestData
+    Public Class Vehicle
 
-        Public Property Id As Integer
+        Public Property Trademark As String
 
-        Public Property Text As String
+        Public Property Model As String
 
-        Public Property Number As Integer
+        Public Property Modification As String
 
-        Public Property MultiLineText As String
+        Public Property Doors As Integer
+
+        Public Property Cyl As Integer
+
+        Public Property MPGCity As Integer
+
+        Public Property MPGHighway As Integer
+
+        Public Property Transmission As String
+
+        Public Property Gears As Integer
+
+        Public Property Description As String
+    End Class
+
+    Public Class Vehicles
+
+        Public Shared Function GetVehicles() As ObservableCollection(Of Vehicle)
+            Dim vehicles = New ObservableCollection(Of Vehicle)()
+            vehicles.Add(New Vehicle() With {.Trademark = "Honda", .Model = "Crosstour", .Modification = "EX 2WD 2.4L I4 5A", .Doors = 4, .Cyl = 4, .MPGCity = 22, .MPGHighway = 31, .Transmission = "Automatic", .Gears = 5, .Description = "The Crosstour (initially branded the Accord Crosstour) is a full-size crossover SUV manufactured by Japanese automaker Honda. Sales began in November 2009 for the 2010 model year."})
+            vehicles.Add(New Vehicle() With {.Trademark = "Ford", .Model = "Edge", .Modification = "SEL FWD 3.5L V6 6A", .Doors = 4, .Cyl = 6, .MPGCity = 19, .MPGHighway = 27, .Transmission = "Automatic", .Gears = 6, .Description = "The Ford Edge is a mid-size crossover SUV (CUV) manufactured by Ford, based on the Ford CD3 platform shared with the Mazda CX-9."})
+            Return vehicles
+        End Function
     End Class
 End Namespace
