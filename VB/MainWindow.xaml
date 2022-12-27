@@ -3,15 +3,22 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
-        Title="MainWindow" Height="300" Width="650">
+        Title="MainWindow" Height="350" Width="750">
     <Grid>
         <dxg:GridControl x:Name="grid">
             <dxg:GridControl.Bands>
                 <dxg:GridControlBand Header="Model Details">
-                    <dxg:GridColumn FieldName="Trademark"/>
-                    <dxg:GridColumn FieldName="Model"/>
-                    <dxg:GridColumn FieldName="Modification" GridRow="1"/>
+                    <dxg:GridControlBand.Bands>
+                        <dxg:GridControlBand Header="Model Name">
+                            <dxg:GridColumn FieldName="Trademark"/>
+                            <dxg:GridColumn FieldName="Model"/>
+                        </dxg:GridControlBand>
+                        <dxg:GridControlBand Header="Modification" OverlayHeaderByChildren="True">
+                            <dxg:GridColumn FieldName="Modification"/>
+                        </dxg:GridControlBand>
+                    </dxg:GridControlBand.Bands>
                 </dxg:GridControlBand>
+                
                 <dxg:GridControlBand Header="Performance Attributes">
                     <dxg:GridColumn FieldName="Doors"/>
                     <dxg:GridColumn FieldName="Cyl"/>
@@ -20,6 +27,7 @@
                     <dxg:GridColumn FieldName="Transmission" GridRow="2"/>
                     <dxg:GridColumn FieldName="Gears" GridRow="2"/>
                 </dxg:GridControlBand>
+                
                 <dxg:GridControlBand Header="Description" OverlayHeaderByChildren="True">
                     <dxg:GridColumn FieldName="Description">
                     </dxg:GridColumn>
