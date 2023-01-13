@@ -22,8 +22,6 @@
                 <dxg:GridControlBand Header="Performance Attributes">
                     <dxg:GridColumn FieldName="Doors"/>
                     <dxg:GridColumn FieldName="Cyl"/>
-                    <dxg:GridColumn FieldName="MPGCity" GridRow="1"/>
-                    <dxg:GridColumn FieldName="MPGHighway" GridRow="1"/>
                     <dxg:GridColumn FieldName="MPGCity" dxg:BandBase.GridRow="1"/>
                     <dxg:GridColumn FieldName="MPGHighway" dxg:BandBase.GridRow="1"/>
                     <dxg:GridColumn FieldName="Transmission" dxg:BandBase.GridRow="2"/>
